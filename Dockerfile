@@ -1,12 +1,13 @@
 FROM node:12-alpine
 
 #Create app directory
+RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-COPY package*.json ./
+COPY . /usr/src/app
 
 #Run npm install
-RUN npm -i
+RUN npm install
 
 #Bundle app source
 COPY . .
