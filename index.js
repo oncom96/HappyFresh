@@ -28,6 +28,8 @@ app.use('/', function(req, res, next) {
         bmi : bmi,
         label : label
     };
+	
+    console.log ('check response', response); 
     
     return res.json(response);
 });
