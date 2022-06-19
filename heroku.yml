@@ -5,5 +5,5 @@ run:
   web: bundle exec puma -C config/puma.rb
   worker:
     command:
-      - npm index.js
+      - node index.js
     image: web
