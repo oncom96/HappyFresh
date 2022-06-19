@@ -12,5 +12,6 @@ RUN npm install
 #Bundle app source
 COPY . .
 
+ENV HOST 0.0.0.0
 EXPOSE 3000
 CMD [ "node", "index.js"]
