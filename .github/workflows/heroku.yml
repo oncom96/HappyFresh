@@ -18,4 +18,8 @@ jobs:
     - name: Release
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+<<<<<<< HEAD
       run: heroku container:release -a ${{ secrets.HEROKU_APP_NAME }} Happy
+=======
+      run: heroku container:release -a ${{ secrets.HEROKU_APP_NAME }} Happy
+>>>>>>> 103921924c8824d49b8d47ec38d0e2848733e1aa
