@@ -10,7 +10,7 @@ COPY . /usr/src/app
 RUN npm install
 
 #Bundle app source
-COPY . .
+COPY . 
 
 ENV HOST 0.0.0.0
 EXPOSE 3000
